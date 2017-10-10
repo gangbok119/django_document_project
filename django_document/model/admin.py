@@ -10,6 +10,9 @@ from .models import (
     Topping,
     TwitterUser,
     InstagramUser,
+    Idol,
+    Group,
+    Membership,
 )
 
 admin.site.register(Person)
@@ -20,3 +23,6 @@ admin.site.register(Pizza)
 admin.site.register(Topping)
 admin.site.register(TwitterUser)
 admin.site.register(InstagramUser)
+admin.site.register(Idol)
+admin.site.register(Group)
+admin.site.register(Membership)
