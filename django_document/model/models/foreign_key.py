@@ -1,7 +1,7 @@
 from django.db import models
 
 __all__ = (
-'Manufacturer', 'Car', 'User'
+    'Manufacturer', 'Car', 'User',
 
 )
 
