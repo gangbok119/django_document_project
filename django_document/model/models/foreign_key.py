@@ -28,5 +28,12 @@ class User(models.Model):
 
     teacher = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True)
 
+    def save(self, *args, **kwargs):
+        if self.teacher and self.pk == self.teacher.pk:
+            self.teacher=None
+        super(User, self).save(*args,**kwargs)
+
+
+
     def __str__(self):
         return ('이름 : {}'.format(self.name))
