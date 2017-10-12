@@ -9,7 +9,7 @@ class Champion(models.Model):
     CHOICE_TYPE = (
         ('magician','마법사'),
         ('supporter','서포터'),
-        ('ad','원거리 딜러')
+        ('ad','원거리 딜러'),
     )
     champion_type = models.CharField(max_length=20, choices=CHOICE_TYPE)
     name = models.CharField(max_length=30)

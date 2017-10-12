@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
 
-    'model','inheritance',
+    'model','inheritance','making_queries',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'django_document.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'doc',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'USER': 'kangbok',
+        'PASSWORD':'1234',
     }
 }
 
